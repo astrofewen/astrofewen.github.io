@@ -1,0 +1,136 @@
+<html>
+
+
+
+        <head>
+                <title>LEONIEFERREIRA - VIDEOS</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" type="text/css" href="CSS/CSS2.css" >
+                <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+                <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700" rel="stylesheet">
+
+
+                <style>
+                        a {
+                        text-decoration: none;
+                        color: white;
+                        }
+
+                        .burger {
+                                display: inline-block;
+                                cursor: pointer;
+                                position: relative;
+                            }
+                            
+                            .bar1, .bar2, .bar3 {
+                                width: 35px;
+                                height: 6px;
+                                background-color: #fcd6df;
+                                margin: 4px 0;
+                                transition: 0.4s;
+                            }
+                            
+                            .change .bar1 {
+                                -webkit-transform: rotate(-45deg) translate(-11px, 6px);
+                                transform: rotate(-45deg) translate(-7px, 6px);
+                            }
+                            
+                            .change .bar2 {opacity: 0;}
+                            
+                            .change .bar3 {
+                                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                                transform: rotate(45deg) translate(-8px, -8px);
+                            }  
+                        
+                 </style>
+      
+        </head>
+
+        
+        <body>
+                <header>
+                                <div class="burger" onclick="myFunction(this)">
+                                                <div class="bar1"></div>
+                                                <div class="bar2"></div>
+                                                <div class="bar3"></div>
+                                </div>
+                                <script>
+                                                function myFunction(x) {
+                                                    x.classList.toggle("change");
+                                                }
+                                                </script>
+                                              
+                                            
+                        <div class="menu" >
+                                <nav id="navigation">
+                                                <a href="index.html">HOME</a>
+                                                <a href="about.html">ABOUT</a>
+                                                <a href="portfolio.html">ILLUSTRATION</a>
+                                                <a href="photography.html">PHOTOGRAPHY</a>
+                                                <a target="_blank" href="https://twitter.com/lilidebarbosa">TWITTER</a>
+                                                <a target="_blank" href="https://www.instagram.com/astrofewen/">INSTAGRAM</a>
+                                                <a target="_blank" href="https://www.linkedin.com/in/l%C3%A9onie-ferreira-1594b813a/">LINKEDIN</a>
+                                </nav>
+                        </div>
+                </header>
+
+
+                <div class="realcontainer">
+                                <div class="containerbigg">
+                                                <div class="container">
+                                                 <img class="containersmall" src="CSS/BOOK/studio-leo.gif" alt="Avatar" /></a>
+                                                <a target="_blank" class="imagesa" href="anywhere.html"> <div class="overlay">
+                                                          <h1>Anywhere</h1>
+                                                </div></a>
+                                </div>     
+
+                                <div class="containerbigg">
+                                                <div class="container">
+                                                 <img class="containersmall" src="CSS/BOOK/menu.gif" alt="Avatar" /></a>
+                                                <a target="_blank" class="imagesa" href="420.html"> <div class="overlay">
+                                                          <h1>420</h1>
+                                                </div></a>
+                                </div>  
+                                
+                                <div class="containerbigg">
+                                                <div class="container">
+                                                 <img class="containersmall" src="CSS/BOOK/autruche.gif" alt="Avatar" /></a>
+                                                <a target="_blank" class="imagesa" href="ostrich.html"> <div class="overlay">
+                                                          <h1>Ostrich</h1>
+                                                </div></a>
+                                </div> 
+                                
+                                <div class="containerbigg">
+                                                <div class="container">
+                                                 <img class="containersmall" src="CSS/BOOK/edelweiss.gif" alt="Avatar" /></a>
+                                                <a target="_blank" class="imagesa" href="beer.html"> <div class="overlay">
+                                                          <h1>The beer project</h1>
+                                                </div></a>
+                                </div>
+                                
+                                
+                </div>
+
+                          
+                            
+                           
+
+
+
+                <footer>
+
+                </footer>
+
+                <script>
+                        $(document).ready(function(){
+                                $(".burger").click(function(){
+                                        $("#navigation a").toggleClass("visible")
+                                });
+                        });
+                        
+                </script>
+        </body>
+
+</html>
